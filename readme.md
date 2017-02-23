@@ -18,3 +18,16 @@ Words following  are my logs ...or my comments just for myself.
 
 ####2.22
 Simple log on to Weibo.cn and it can get HTML information from it. No other function.
+	
+	Way to Realize:
+		Cookie appended to URL.
+
+#### 2.23
+Be able to search microblog depending on keyword.</br>
+
+	Way to Realize:
+		Append params in URL since we use GET to get the message.
+		
+Unfortunately, it is found that Weibo.cn dont provide LOCATION information *(actually it does provide, but you can`t open the URL, seems that something goes wrong in Weibo.cn)*, which is severely needed in our requirements.
+</br>Maybe I should still go back to Weibo.com ...</br>
+What a bad day!!!
