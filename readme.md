@@ -47,3 +47,8 @@ I find that Weibo.cn provide LOCATION information, but the rule is complicated. 
 Cookies changes frequently, so it is not a good idea to use it in long-term project.</br>
 Twitter context havent been analysized, now it is just a 'span' div.
 
+#### 2.28
+Add excel operation.
+	
+	Way to Realize:
+		import xlwt
