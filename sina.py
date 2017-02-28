@@ -1,4 +1,5 @@
 import requests
+import xlwt
 from bs4 import BeautifulSoup
 
 
@@ -37,6 +38,16 @@ def printList(list_all):
         for key, value in small_list.items():
             print("key:  " + key + "    value:   " + value + '/n')
 
+def outputList2Excel(list_all):
+    workbook = xlwt.Workbook()
+    sheet1 = workbook.add_sheet('sheet1', cell_overwrite_ok=True)
+    i = 1
+    for small_list in list_all:
+        sheet1.write(i, 1, small_list['name'])
+        sheet1.write(i, 2, small_list['blog'])
+        i += 1
+    workbook.save(r'C:\Users\liuzhili\Desktop\SpiderNeeded\output.xls')
+
 cookieUsing = setCookie()
 # page = 1
 # while page < 2:
@@ -72,5 +83,7 @@ for item in soup.findAll('div', attrs={"class": "c", 'id': True}):
     list_single['blog'] = blog_context
     list_single['name'] = user_name
 
+
     list_all.append(list_single)
 printList(list_all)
+outputList2Excel(list_all)
