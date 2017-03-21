@@ -52,3 +52,25 @@ Add excel operation.
 	
 	Way to Realize:
 		import xlwt
+
+####3.13
+Precondition HTML files by removing all html trags.
+
+	Way to Realize:
+		soup.get_text()
+
+####3.21
+I almost completed my project!!<br>
+
+	Way to Realize:
+		SeperateWord.py: use jieba to seperate word in order to train my model
+		trainSimilarWords.py: use gensim to train my model
+		SentimentAnaysis.py: use SnowNLP to give the sentiment value of a sentence.
+
+My Crawler was blocked by Weibo.cn, and I dont know why, I just waited it to be able to work again.<br>
+Maybe Weibo blocked my cookie, for I changed my IP and it still don`t work, but my IPs was all in the same network segment.
+Start to know new method to avoid anti-crawler.
+
+	Way to Realize:
+		new a IP pool
+		(I will try it soon later)
