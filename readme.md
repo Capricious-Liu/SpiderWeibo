@@ -16,7 +16,7 @@ My first small spider for Weibo.cn.</br>
 
 Words following  are my logs ...or my comments just for myself.
 
-####2.22
+#### 2.22
 Simple log on to Weibo.cn and it can get HTML information from it. No other function.
 	
 	Way to Realize:
@@ -53,13 +53,13 @@ Add excel operation.
 	Way to Realize:
 		import xlwt
 
-####3.13
+#### 3.13
 Precondition HTML files by removing all html trags.
 
 	Way to Realize:
 		soup.get_text()
 
-####3.21
+#### 3.21
 I almost completed my project!!<br>
 
 	Way to Realize:
