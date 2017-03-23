@@ -18,19 +18,19 @@ def initParam(keyword, page):
            'advancedfilter': '1',
            'hasori':'1',
            'starttime':'20170311',
-           'endtime': '20170320',
+           'endtime': '20170312',
            'sort': 'time',
            'page': str(page)}
     return param
 
 def saveFile(data, page):
-    save_path = r'C:\Users\liuzhili\Desktop\SpiderNeeded\output'+str(page)+'.txt'
+    save_path = r'C:\Users\liuzhili\Desktop\SpiderNeeded\output_origin\output'+str(page)+'.txt'
     f_obj = open(save_path, 'wb')
     f_obj.write(data)
     f_obj.close()
 
 def readFile(page):
-    read_path = r'C:\Users\liuzhili\Desktop\SpiderNeeded\output'+str(page)+'.txt'
+    read_path = r'C:\Users\liuzhili\Desktop\SpiderNeeded\output_origin\output'+str(page)+'.txt'
     f_obj = open(read_path, 'rb')
     ans = f_obj.read()
     f_obj.close()
